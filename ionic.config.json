@@ -1,0 +1,7 @@
+{
+  "name": "safe-for-dogs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
