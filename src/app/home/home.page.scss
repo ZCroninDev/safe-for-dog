@@ -1,27 +1,46 @@
-#container {
-  text-align: center;
+#app-title {
+	font-size: 32px;
+	font-weight: bold;
+}
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+#container {
+  	text-align: center;
+	  padding: 20px;
 }
 
 #container strong {
-  font-size: 20px;
-  line-height: 26px;
+  	font-size: 20px;
+  	line-height: 26px;
 }
 
 #container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  	font-size: 16px;
+  	line-height: 22px;
+  	color: #8c8c8c;
+  	margin: 0;
 }
 
 #container a {
-  text-decoration: none;
+  	text-decoration: none;
+}
+
+#card-title {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.card-text {
+	font-size: 24px;
+}
+
+#yes {
+	font-size: 24px;
+	font-weight: bold;
+	color: #2dd36f;
+}
+
+#no {
+	font-size: 24px;
+	font-weight: bold;
+	color: #eb445a;
 }
