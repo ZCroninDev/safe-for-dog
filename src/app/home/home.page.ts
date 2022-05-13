@@ -29,6 +29,7 @@ export class HomePage {
 			this.foodData = this.foods[foodBeingSearched];
 		} else {
 			console.log('Invalid search')
+			this.validSearch = false;
 			this.foodData = {};
 		}
 	}
