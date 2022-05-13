@@ -16,19 +16,18 @@
 
 	<ion-card color="light" *ngIf="validSearch">
 		<ion-card-header>
-			<ion-card-title id="card-title" size="large">Banana</ion-card-title>
+			<ion-card-title id="card-title" size="large">{{foodData.title}}</ion-card-title>
 		</ion-card-header>
 		<ion-row class="card-safety ion-justify-content-center ion-padding">
 			<ion-col size="3" class="ion-align-self-center">
 			  <div class="card-text">Is it Safe?</div>
 			</ion-col>
-			<ion-col size="3" >
-			  <div id="yes">Yes</div>
-			  <div id="no">No</div>
+			<ion-col size="3">
+			  <div id="yes">{{foodData.safety}}</div>
 			</ion-col>
 		</ion-row>
 		<ion-card-content class="card-information ion-padding">
-			The natural sugar found in bananas may cause stomach upsets so make sure dogs are only given bananas in moderation
+			{{foodData.information}}
 		</ion-card-content>
 	  </ion-card>
   </div>
