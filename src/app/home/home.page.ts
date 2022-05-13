@@ -10,6 +10,7 @@ export class HomePage {
 	validSearch: boolean = false;
 
 	constructor() {
+		
 	}
 
 	userSearch(str: string) {
@@ -23,5 +24,6 @@ export class HomePage {
 			
 		}
 	}
+
 	
 }
