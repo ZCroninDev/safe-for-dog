@@ -1,23 +1,23 @@
 <ion-content [fullscreen]="true">
   <ion-header>
-    <ion-toolbar class="" color="success">
+    <ion-toolbar class="" color="tertiary">
 		<ion-row class="ion-justify-content-center">
 			<ion-col size="5" class="ion-align-self-center">
 				<ion-title id="app-title" class="ion-text-right" size="large">Can My Dog Eat</ion-title>
 			</ion-col>
 			<ion-col size="5">
-				<ion-searchbar class=""  placeholder="This?"></ion-searchbar>
+				<ion-searchbar (search)="userSearch($event.target.value)" placeholder="This?"></ion-searchbar>
 			</ion-col>
 		</ion-row>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-	<ion-card color="light">
+
+	<ion-card color="light" *ngIf="validSearch">
 		<ion-card-header>
 			<ion-card-title id="card-title" size="large">Banana</ion-card-title>
 		</ion-card-header>
-
 		<ion-row class="ion-justify-content-center ion-padding">
 			<ion-col size="3" class="ion-align-self-center">
 			  <div class="card-text">Is it Safe?</div>
@@ -27,7 +27,6 @@
 			  <div id="no">No</div>
 			</ion-col>
 		</ion-row>
-
 		<ion-card-content class="card-text ion-padding">
 			The natural sugar found in bananas may cause stomach upsets so make sure dogs are only given bananas in moderation
 		</ion-card-content>
