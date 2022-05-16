@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
-import * as foodList from 'src/assets/foodList.json'
+import * as foodList from 'src/assets/foodList.json';
+
+// import * as alternativeAndMisspellings from 'src/assets/alternativeAndMisspellings.json';
 
 @Component({
 	selector: 'app-home',
@@ -12,9 +14,12 @@ export class HomePage {
 	validSearch: boolean = false;
 	foods: object;
 	foodData: object;
+	// altSpellings: object;
 
 	constructor() {
 		this.foods = JSON.parse(JSON.stringify(foodList));
+		// this.altSpellings = JSON.parse(JSON.stringify(alternativeAndMisspellings));
+		// console.log(this.altSpellings)
 	}
 
 	
@@ -23,7 +28,12 @@ export class HomePage {
 			console.log('Valid search')
 			this.validSearch = true;
 			this.foodData = this.foods[foodBeingSearched];
-		} else {
+		} 
+		// else if (this.altSpellings[foodBeingSearched]) {
+		// 	this.validSearch = true;
+		// 	this.foodData = this.foods[foodBeingSearched];
+		// } 
+		else {
 			console.log('Invalid search')
 			this.validSearch = false;
 			this.foodData = {};
