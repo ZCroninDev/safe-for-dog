@@ -15,13 +15,10 @@ export class HomePage {
 
 	constructor() {
 		this.foods = JSON.parse(JSON.stringify(foodList));
-		console.log(foodList)
-		console.log(this.foods['banana'])
 	}
 
 	
 	userSearch(foodBeingSearched: string) {
-		
 		if (this.foods[foodBeingSearched]) {
 			console.log('Valid search')
 			this.validSearch = true;
@@ -30,8 +27,6 @@ export class HomePage {
 			console.log('Invalid search')
 			this.validSearch = false;
 			this.foodData = {};
-			console.log(this.foodData)
-
 		}
 	}
 	

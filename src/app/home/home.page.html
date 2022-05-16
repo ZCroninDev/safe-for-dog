@@ -6,7 +6,7 @@
 				<ion-title id="app-title" class="ion-text-right" size="large">Can My Dog Eat</ion-title>
 			</ion-col>
 			<ion-col size="5">
-				<ion-searchbar (search)="userSearch($event.target.value)" placeholder="This?"></ion-searchbar>
+				<ion-searchbar (search)="userSearch($event.target.value.toLowerCase())" placeholder="This?"></ion-searchbar>
 			</ion-col>
 		</ion-row>
     </ion-toolbar>
