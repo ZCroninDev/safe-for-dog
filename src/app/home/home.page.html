@@ -23,7 +23,8 @@
 			  <div class="card-text">Is it Safe?</div>
 			</ion-col>
 			<ion-col size="3">
-			  <div id="yes">{{foodData.safety}}</div>
+			  <div id="yes" *ngIf="foodData.safety">Yes</div>
+			  <div id="no" *ngIf="!foodData.safety">No</div>
 			</ion-col>
 		</ion-row>
 		<ion-card-content class="card-information ion-padding">

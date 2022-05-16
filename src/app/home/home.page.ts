@@ -14,7 +14,6 @@ export class HomePage {
 	foodData: object;
 
 	constructor() {
-		// console.log(typeof(foodList));
 		this.foods = JSON.parse(JSON.stringify(foodList));
 		console.log(foodList)
 		console.log(this.foods['banana'])
@@ -31,6 +30,8 @@ export class HomePage {
 			console.log('Invalid search')
 			this.validSearch = false;
 			this.foodData = {};
+			console.log(this.foodData)
+
 		}
 	}
 	
