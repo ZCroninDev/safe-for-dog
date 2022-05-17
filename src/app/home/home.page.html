@@ -31,5 +31,14 @@
 			{{foodData.information}}
 		</ion-card-content>
 	  </ion-card>
-  </div>
+
+  <ion-card color="light" *ngIf="invalidSearch">
+	<ion-card-header>
+		<ion-card-title id="card-title" size="large">Sorry, we could not find {{foodNotFound}}</ion-card-title>
+	</ion-card-header>
+	<ion-card-content class="card-information ion-padding">
+		Please search for another food item.
+	</ion-card-content>
+  </ion-card>
+</div>
 </ion-content>
